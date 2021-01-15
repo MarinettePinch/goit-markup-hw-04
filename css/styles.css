@@ -7,6 +7,8 @@
   --primary-background-color: rgba(47, 48, 58, 1);
   --secondry-background-color: rgba(245, 244, 250, 1);
   --border-color: rgba(238, 238, 238, 1);
+  --hero-background-color: rgba(196, 196, 196, 1);
+  --gradient-background-color: rgba(47, 48, 58, 0.4);
 }
 
 *,
@@ -113,7 +115,14 @@ body {
 /*--main section--*/
 
 .main-section {
-  background-color: var(--primary-background-color);
+  background-color: var(--hero-background-color);
+  background-image: linear-gradient(
+      var(--gradient-background-color),
+      var(--gradient-background-color)
+    ),
+    url(../img/hero-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero {
