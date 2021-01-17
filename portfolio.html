@@ -17,16 +17,14 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <nav class="header-site-nav">
+      <div class="header-container flex">
+        <nav class="header-site-nav flex">
           <a class="link" href="./index.html">
-            <img
-              src="./img/WebStudiologo-header.svg"
-              alt="WebStudioLogo"
-              width="145"
-            />
+            <svg width="145" height="31">
+              <use class="logo" href="../img/sprite.svg#ws-logo"></use>
+            </svg>
           </a>
-          <ul class="header-site-nav-items">
+          <ul class="header-site-nav-items flex">
             <li class="list"><a class="link" href="./index.html">Студия</a></li>
             <li class="list">
               <a class="link current" href="./portfolio.html">Портфолио</a>
@@ -35,14 +33,28 @@
           </ul>
         </nav>
         <address class="header-address">
-          <ul class="header-site-nav-address">
+          <ul class="header-site-nav-address flex">
             <li class="list">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="link" href="mailto:info@devstudio.com">
+                <svg width="16" height="12">
+                  <use
+                    class="address-icon"
+                    href="../img/sprite.svg#envelope"
+                  ></use>
+                </svg>
+                <span class="span">info@devstudio.com</span>
+              </a>
             </li>
             <li class="list">
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link flex" href="tel:+380961111111">
+                <svg width="10" height="16">
+                  <use
+                    class="address-icon"
+                    href="../img/sprite.svg#smartphone"
+                  ></use>
+                </svg>
+                <span class="span">+38 096 111 11 11</span>
+              </a>
             </li>
           </ul>
         </address>
@@ -76,7 +88,7 @@
           <!--/button container-->
           <!--projects container-->
           <div>
-            <ul class="projects">
+            <ul class="projects flex">
               <li class="list projects-list">
                 <a class="link" href="#">
                   <figure class="projects-item">
@@ -207,11 +219,9 @@
     <footer class="footer">
       <div class="footer-container">
         <a class="link" href="#">
-          <img
-            src="./img/WebStudiologo-footer.svg"
-            alt="WebStudioLogo"
-            width="145"
-          />
+          <svg width="145" height="31">
+            <use class="logo" href="../img/sprite.svg#ws-logo-light"></use>
+          </svg>
         </a>
         <address class="footer-address">
           <ul>

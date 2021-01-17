@@ -9,6 +9,8 @@
   --border-color: rgba(238, 238, 238, 1);
   --hero-background-color: rgba(196, 196, 196, 1);
   --gradient-background-color: rgba(47, 48, 58, 0.4);
+  --icons-color: rgba(175, 177, 184, 1);
+  --icons-bg-footer-color: rgba(255, 255, 255, 0.1);
 }
 
 *,
@@ -35,6 +37,10 @@ body {
   text-decoration: none;
 }
 
+.link:focus {
+  outline: none;
+}
+
 .title-upp {
   text-transform: uppercase;
 }
@@ -42,6 +48,11 @@ body {
   width: 1600px;
   margin: auto;
   padding: 0 215px 94px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 /*--header--*/
 
@@ -62,21 +73,14 @@ body {
 .header-container,
 .header-site-nav,
 .header-site-nav-items,
-.header-site-nav-address,
-.competences-items,
-.business-items,
-.team-items,
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header-container,
-.header-site-nav,
-.header-site-nav-items,
 .header-site-nav-address {
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  width: 145px;
+  height: 31px;
 }
 
 .header-site-nav > .link {
@@ -94,10 +98,19 @@ body {
 .header-address .link {
   color: var(--grey-text-color);
   font-style: normal;
+  align-items: center;
+}
+
+.span {
+  margin-left: 10px;
 }
 
 .header-site-nav-address .list:not(:last-child) {
   margin-right: 50px;
+}
+
+.address-icon {
+  fill: var(--grey-text-color);
 }
 
 .header .link:hover,
@@ -105,6 +118,12 @@ body {
 .header .link:active {
   color: var(--hover-text-color);
   cursor: pointer;
+}
+
+.header .link:hover .address-icon,
+.header .link:focus .address-icon,
+.header .link:active .address-icon {
+  fill: var(--hover-text-color);
 }
 
 .header-site-nav .link.current {
@@ -166,10 +185,20 @@ body {
 /*--competences section--*/
 .competences-list {
   width: 270px;
-  min-height: 101px;
+  min-height: 251px;
 }
 .competences-list:not(:last-child) {
   margin-right: 30px;
+}
+
+.competence-icon {
+  background-color: var(--secondry-background-color);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .competences-title {
@@ -188,8 +217,7 @@ body {
 
 /*--/competences section--*/
 /*--what we do section--*/
-.business-title,
-.team-title {
+.title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -247,7 +275,67 @@ body {
   color: var(--grey-text-color);
 }
 
+.icon {
+  fill: var(--icons-color);
+}
+
+.social-items {
+  margin: 16px 32px 0;
+}
+
+.social-list {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list:hover .icon {
+  fill: var(--light-text-color);
+}
+
+.social-list:hover {
+  background-color: var(--hover-text-color);
+}
+
 /*--our team section--*/
+/*--customers section--*/
+
+.customers {
+  padding-top: 94px;
+}
+
+.customers-list {
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-list:hover .icon,
+.customers-list:active .icon,
+.customers-list:focus .icon {
+  fill: var(--hover-text-color);
+}
+
+.customers-list:hover,
+.customers-list:active,
+.customers-list:focus {
+  border: 1px solid var(--hover-text-color);
+}
+
+/*--customers section-*/
 /*--footer--*/
 
 .footer {
@@ -273,6 +361,34 @@ body {
   color: var(--light-footer-text-color);
   margin-top: 9px;
 }
+
+.footer-social {
+  margin-top: 12px;
+  margin-left: 70px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+}
+
+.footer-title {
+  margin-bottom: 20px;
+}
+
+.footer .social-list {
+  background-color: var(--icons-bg-footer-color);
+}
+
+.footer .social-list:hover {
+  background-color: var(--hover-text-color);
+}
+
+.footer .icon {
+  fill: var(--light-text-color);
+}
+
 /*--/footer--*/
 /*--display section--*/
 
@@ -303,6 +419,7 @@ body {
 .display-button:hover,
 .display-button:focus,
 .display-button:active {
+  outline: none;
   background-color: var(--hover-text-color);
   color: var(--light-text-color);
   cursor: pointer;
@@ -334,6 +451,19 @@ body {
 
 .projects-item {
   font-size: 0;
+}
+
+.projects-list:hover,
+.projects-list:active,
+.projects-list:focus {
+  outline: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-list .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-caption {

@@ -17,16 +17,14 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <nav class="header-site-nav">
+      <div class="header-container flex">
+        <nav class="header-site-nav flex">
           <a class="link" href="./index.html">
-            <img
-              src="./img/WebStudiologo-header.svg"
-              alt="WebStudioLogo"
-              width="145"
-            />
+            <svg width="145" height="31">
+              <use class="logo" href="../img/sprite.svg#ws-logo"></use>
+            </svg>
           </a>
-          <ul class="header-site-nav-items">
+          <ul class="header-site-nav-items flex">
             <li class="list">
               <a class="link current" href="./index.html">Студия</a>
             </li>
@@ -37,14 +35,28 @@
           </ul>
         </nav>
         <address class="header-address">
-          <ul class="header-site-nav-address">
+          <ul class="header-site-nav-address flex">
             <li class="list">
-              <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+              <a class="link" href="mailto:info@devstudio.com">
+                <svg width="16" height="12">
+                  <use
+                    class="address-icon"
+                    href="../img/sprite.svg#envelope"
+                  ></use>
+                </svg>
+                <span class="span">info@devstudio.com</span>
+              </a>
             </li>
             <li class="list">
-              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="link flex" href="tel:+380961111111">
+                <svg width="10" height="16">
+                  <use
+                    class="address-icon"
+                    href="../img/sprite.svg#smartphone"
+                  ></use>
+                </svg>
+                <span class="span">+38 096 111 11 11</span>
+              </a>
             </li>
           </ul>
         </address>
@@ -66,8 +78,13 @@
       <section class="competences">
         <div class="container">
           <h2 hidden>Компетенции</h2>
-          <ul class="competences-items">
+          <ul class="competences-items flex">
             <li class="list competences-list">
+              <div class="competence-icon flex">
+                <svg width="70" height="70">
+                  <use href="./img/sprite.svg#antenna"></use>
+                </svg>
+              </div>
               <h3 class="competences-title title-upp">Внимание к деталям</h3>
               <p class="competences-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -75,6 +92,11 @@
               </p>
             </li>
             <li class="list competences-list">
+              <div class="competence-icon flex">
+                <svg width="67" height="70">
+                  <use href="./img/sprite.svg#clock"></use>
+                </svg>
+              </div>
               <h3 class="competences-title title-upp">Пунктуальность</h3>
               <p class="competences-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -82,6 +104,11 @@
               </p>
             </li>
             <li class="list competences-list">
+              <div class="competence-icon flex">
+                <svg width="70" height="70">
+                  <use href="./img/sprite.svg#diagram"></use>
+                </svg>
+              </div>
               <h3 class="competences-title title-upp">Планирование</h3>
               <p class="competences-text">
                 Равным образом консультация с широким активом в значительной
@@ -89,6 +116,11 @@
               </p>
             </li>
             <li class="list competences-list">
+              <div class="competence-icon flex">
+                <svg width="70" height="70">
+                  <use href="./img/sprite.svg#astronaut"></use>
+                </svg>
+              </div>
               <h3 class="competences-title title-upp">
                 Современные технологии
               </h3>
@@ -104,8 +136,8 @@
       <!--what we do section-->
       <section class="business">
         <div class="container">
-          <h2 class="business-title">Чем мы занимаемся</h2>
-          <ul class="business-items">
+          <h2 class="title">Чем мы занимаемся</h2>
+          <ul class="business-items flex">
             <li class="list business-list">
               <img
                 src="./img/what-we-do-img1.jpg"
@@ -134,8 +166,8 @@
       <!--our team section-->
       <section class="team">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
-          <ul class="team-items">
+          <h2 class="title">Наша команда</h2>
+          <ul class="team-items flex">
             <li class="list team-list">
               <figure class="team-item">
                 <img
@@ -148,6 +180,40 @@
                   <p lang="en" class="team-caption-position">
                     Product Designer
                   </p>
+                  <ul class="social-items flex">
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#instagram"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#twitter"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#facebook"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#linkedin"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
@@ -163,6 +229,40 @@
                   <p lang="en" class="team-caption-position">
                     Frontend Developer
                   </p>
+                  <ul class="social-items flex">
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#instagram"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#twitter"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#facebook"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#linkedin"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
@@ -176,6 +276,40 @@
                 <figcaption class="team-caption">
                   <h3 class="team-caption-names">Николай Тарасов</h3>
                   <p lang="en" class="team-caption-position">Marketing</p>
+                  <ul class="social-items flex">
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#instagram"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#twitter"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#facebook"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#linkedin"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
@@ -189,37 +323,134 @@
                 <figcaption class="team-caption">
                   <h3 class="team-caption-names">Михаил Ермаков</h3>
                   <p lang="en" class="team-caption-position">UI Designer</p>
+                  <ul class="social-items flex">
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#instagram"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#twitter"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#facebook"
+                        ></use>
+                      </svg>
+                    </li>
+                    <li class="list social-list flex">
+                      <svg width="20" height="20">
+                        <use
+                          class="icon"
+                          href="../img/sprite.svg#linkedin"
+                        ></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
           </ul>
         </div>
       </section>
-
       <!--/our team section-->
-    </main>
-    <footer class="footer">
-      <div class="footer-container">
-        <a class="link" href="#">
-          <img
-            src="./img/WebStudiologo-footer.svg"
-            alt="WebStudioLogo"
-            width="145"
-          />
-        </a>
-        <address class="footer-address">
-          <ul>
-            <li class="list">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="list">
-              <a class="link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+      <!--customers section-->
+      <section class="customers">
+        <div class="container">
+          <h2 class="title">Постоянные клиенты</h2>
+          <ul class="customers-items flex">
+            <li class="list customers-list flex">
+              <svg width="45" height="50">
+                <use class="icon" href="../img/sprite.svg#logo-1"></use>
+              </svg>
             </li>
-            <li class="list">
-              <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="list customers-list flex">
+              <svg width="45" height="50">
+                <use class="icon" href="../img/sprite.svg#logo-2"></use>
+              </svg>
+            </li>
+            <li class="list customers-list flex">
+              <svg width="45" height="50">
+                <use class="icon" href="../img/sprite.svg#logo-3"></use>
+              </svg>
+            </li>
+            <li class="list customers-list flex">
+              <svg width="45" height="50">
+                <use class="icon" href="../img/sprite.svg#logo-4"></use>
+              </svg>
+            </li>
+            <li class="list customers-list flex">
+              <svg width="45" height="50">
+                <use class="icon" href="../img/sprite.svg#logo-5"></use>
+              </svg>
+            </li>
+            <li class="list customers-list flex">
+              <svg width="45" height="50">
+                <use class="icon" href="../img/sprite.svg#logo-6"></use>
+              </svg>
             </li>
           </ul>
-        </address>
+        </div>
+      </section>
+      <!--/customers section-->
+    </main>
+    <footer class="footer">
+      <div class="footer-container flex">
+        <div class="footer-contacts">
+          <a class="link" href="#">
+            <svg width="145" height="31">
+              <use class="logo" href="../img/sprite.svg#ws-logo-light"></use>
+            </svg>
+          </a>
+          <address class="footer-address">
+            <ul>
+              <li class="list">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="list">
+                <a class="link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="list">
+                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h3 class="title-upp footer-title">присоединяйтесь</h3>
+          <ul class="footer-social-items flex">
+            <li class="list social-list flex">
+              <svg width="20" height="20">
+                <use class="icon" href="../img/sprite.svg#instagram"></use>
+              </svg>
+            </li>
+            <li class="list social-list flex">
+              <svg width="20" height="20">
+                <use class="icon" href="../img/sprite.svg#twitter"></use>
+              </svg>
+            </li>
+            <li class="list social-list flex">
+              <svg width="20" height="20">
+                <use class="icon" href="../img/sprite.svg#facebook"></use>
+              </svg>
+            </li>
+            <li class="list social-list flex">
+              <svg width="20" height="20">
+                <use class="icon" href="../img/sprite.svg#linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
